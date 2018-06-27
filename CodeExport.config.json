@@ -1,0 +1,10 @@
+{
+	"Module Paths": {
+		"Sheet1": "Src/Sheet1.cls",
+		"b_ICBBreakdown": "Src/b_ICBBreakdown.bas",
+		"a_DataPull": "Src/a_DataPull.bas",
+		"c_Math": "Src/c_Math.bas",
+		"d_ReportMaker": "Src/d_ReportMaker.bas",
+		"e_FileInjector": "Src/e_FileInjector.bas"
+	}
+}
