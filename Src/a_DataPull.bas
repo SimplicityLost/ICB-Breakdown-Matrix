@@ -30,7 +30,7 @@ Function datapuller(storenum) As Boolean
         
     recordwb.Close False
     Set recordwb = Nothing
-    data.Range("A1:Q500000").Sort key1:=data.Range("C:C"), order1:=xlAscending, Header:=xlYes
+    data.Range("A1:Q" & n).Sort key1:=data.Range("C:C"), order1:=xlAscending, Header:=xlYes
     datapuller = False
 End Function
 Function vendorpuller()

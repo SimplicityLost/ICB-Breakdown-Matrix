@@ -28,12 +28,6 @@ Function FilePathGet(mnth, yr)
 '\\Ntoscar\Stores\L001 Motors Inter-Company Billing\2017\05May ICB\EOM
 Dim thism, thisy, file
 
-'If (mnth > 9) Then
-'thism = UCase(CStr(mnth & "-" & MonthName(mnth, True) & "-ICB"))
-'Else
-'thism = UCase(CStr("0" & mnth & "-" & MonthName(mnth, True) & "-ICB"))
-'End If
-
 If (mnth > 9) Then
 thism = UCase(CStr(mnth & " " & MonthName(mnth, True) & " 2018"))
 Else
@@ -45,14 +39,6 @@ thisy = "ICB 20" & yr
 Else
 thisy = "ICB " & yr
 End If
-
-'file = "T:\Accounting\Inter-Co Billing\" & thism & "\EOM"
-'
-'If Len(Dir(file, vbDirectory)) = 0 Then
-'    FilePathGet = "T:\Accounting\Inter-Co Billing\" & thisy & "\" & thism & "\EOM"
-'Else
-'    FilePathGet = file
-'End If
 
 file = "\\Ntoscar\Stores\L001 Motors Inter-Company Billing\" & yr & "\" & thism & "\EOM"
 
