@@ -285,28 +285,18 @@ Sub formatreport(rangein As Range, style As Integer)
                 End With
                 With rangein.FormatConditions.Add(xlCellValue, xlNotBetween, -0.25, 0.25)
                     With .Interior
-                        .Pattern = xlSolid
-                        .PatternColorIndex = xlAutomatic
-                        .ThemeColor = xlThemeColorAccent2
-                        .TintAndShade = 0.599993896298105
-                        .PatternTintAndShade = 0
+                        .color = 13551615
                     End With
                     With .Font
-                        .ThemeColor = xlThemeColorAccent2
-                        .TintAndShade = -0.249977111117893
+                        .color = 393372
                     End With
                 End With
                 With rangein.FormatConditions.Add(xlCellValue, xlBetween, -0.25, 0.25)
                     With .Interior
-                        .Pattern = xlSolid
-                        .PatternColorIndex = xlAutomatic
-                        .ThemeColor = xlThemeColorAccent3
-                        .TintAndShade = 0.599993896298105
-                        .PatternTintAndShade = 0
+                        .color = 13561798
                     End With
                     With .Font
-                        .ThemeColor = xlThemeColorAccent3
-                        .TintAndShade = -0.249977111117893
+                        .color = 24832
                     End With
                 End With
  
