@@ -15,7 +15,7 @@ Function FileInjector(mnthin, yrin, storenum)
         Set w = ActiveWorkbook
 
         reportwb.Sheets("Report").Copy _
-            After:=w.Sheets(4)
+            After:=w.Sheets(w.Sheets.Count)
         w.Sheets("Report").name = "BREAKDOWN"
 
         w.Save
