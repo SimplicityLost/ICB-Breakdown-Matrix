@@ -304,16 +304,11 @@ Sub formatreport(rangein As Range, style As Integer)
             
                 'With rangein.FormatConditions.Add(xlCellValue, xlEqual, 0)
                 With rangein.FormatConditions.Add(Type:=xlExpression, Formula1:="=AND(RC[1]<>0,RC=0)")
-                    With .Interior
-                        .Pattern = xlSolid
-                        .PatternColorIndex = xlAutomatic
-                        .ThemeColor = xlThemeColorAccent2
-                        .TintAndShade = 0.599993896298105
-                        .PatternTintAndShade = 0
+                  With .Interior
+                        .color = 13551615
                     End With
                     With .Font
-                        .ThemeColor = xlThemeColorAccent2
-                        .TintAndShade = -0.249977111117893
+                        .color = 393372
                     End With
                 End With
                 
