@@ -38,7 +38,7 @@ Sub ReportMaker(storenum As String, datein)
         Call formatreport(.Range("K5:M6"), 1)
         With .Range("M6").Borders(xlEdgeLeft)
             .LineStyle = xlContinuous
-            .Color = -4210753
+            .color = -4210753
             .TintAndShade = 0
             .Weight = xlMedium
         End With
@@ -176,7 +176,7 @@ Sub formatreport(rangein As Range, style As Integer)
                 With rangein.Interior
                     .Pattern = xlSolid
                     .PatternColorIndex = xlAutomatic
-                    .Color = 13734656
+                    .color = 13734656
                     .TintAndShade = 0
                     .PatternTintAndShade = 0
                 End With
@@ -200,32 +200,32 @@ Sub formatreport(rangein As Range, style As Integer)
                 rangein.Borders(xlDiagonalUp).LineStyle = xlNone
                 With rangein.Borders(xlEdgeLeft)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlThick
                 End With
                 With rangein.Borders(xlEdgeTop)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlThick
                 End With
                 With rangein.Borders(xlEdgeBottom)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlThick
                 End With
                 With rangein.Borders(xlEdgeRight)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlThick
                 End With
                 rangein.Borders(xlInsideVertical).LineStyle = xlNone
                 With rangein.Borders(xlInsideHorizontal)
                     .LineStyle = xlContinuous
-                    .Color = -16737793
+                    .color = -16737793
                     .TintAndShade = 0
                     .Weight = xlMedium
                 End With
@@ -234,25 +234,25 @@ Sub formatreport(rangein As Range, style As Integer)
                 'Major borders
                 With rangein.Borders(xlEdgeLeft)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlThick
                 End With
                 With rangein.Borders(xlEdgeTop)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlThick
                 End With
                 With rangein.Borders(xlEdgeBottom)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlThick
                 End With
                 With rangein.Borders(xlEdgeRight)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlThick
                 End With
@@ -262,7 +262,7 @@ Sub formatreport(rangein As Range, style As Integer)
                     With .Interior
                         .Pattern = xlSolid
                         .PatternColorIndex = xlAutomatic
-                        .Color = 13734656
+                        .color = 13734656
                         .TintAndShade = 0
                         .PatternTintAndShade = 0
                     End With
@@ -279,7 +279,7 @@ Sub formatreport(rangein As Range, style As Integer)
             
                 With rangein.Borders(xlEdgeLeft)
                     .LineStyle = xlContinuous
-                    .Color = -4210753
+                    .color = -4210753
                     .TintAndShade = 0
                     .Weight = xlMedium
                 End With

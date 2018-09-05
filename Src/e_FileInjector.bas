@@ -11,8 +11,7 @@ Function FileInjector(mnthin, yrin, storenum)
     If Len(file) = 0 Then
         FileInjector = 0
     Else
-        Workbooks.Open (file)
-        Set w = ActiveWorkbook
+        Set w = Workbooks.Open(file)
 
         reportwb.Sheets("Report").Copy _
             After:=w.Sheets(w.Sheets.Count)
